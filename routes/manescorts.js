@@ -8,6 +8,8 @@ var getPaths = function (src, callback) {
 };
 
 var id= 0;
+var counter = 0;
+
 var getNumber = function () {
     id = JSON.parse(fs.readFileSync("Jsonaux/ID_handler.json")).IDMALE;
 };
@@ -72,8 +74,9 @@ app.get('/', function(req, res, next) {
         });
         lastloaded = totalprofiles;
 
-        if(photosource.length < 1)
+        if(photosource.length < 1 && counter <2)
         {
+            counter++;
             res.redirect('manescorts');
         }
     res.render('mans', {

@@ -19,11 +19,11 @@ var nodemailer = require('nodemailer');
 var smtpTransport = require('nodemailer-smtp-transport');
 
 
-var mailAccountUser = 'igescortslondon@gmail.com';
-var mailAccountPassword = 'Igescorts22';
+var mailAccountUser = 'gagiu.filip@gmail.com';
+var mailAccountPassword = 'gagiufilip2011';
 
-var fromEmailAddress = 'igescortslondon@gmail.com';
-var toEmailAddress ='igescortslondon@gmail.com';
+var fromEmailAddress = 'gagiu.filip@gmail.com';
+var toEmailAddress = 'gagiu.filip@gmail.com';
 
 
 
@@ -38,8 +38,8 @@ app.post('/sendmail', upload.any(), function (req,res,next) {
     let transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
-            user: 'igescortslondon@gmail.com'
-            pass:  'Igescorts22'
+            user: 'gagiu.filip@gmail.com',
+            pass:  'gagiufilip2011'
         },
         logger: bunyan.createLogger({
             name: 'nodemailer'

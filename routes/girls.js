@@ -18,6 +18,7 @@ var photosource = [], photosourceaux = [], skipped = [], backup=[];
 var totalprofiles = 0;
 var rendered = false;
 var lastloaded = 0;
+var counter = 0;
 app.get('/', function(req, res, next) {
 
     getNumber();
@@ -73,8 +74,9 @@ app.get('/', function(req, res, next) {
             }
         });
         lastloaded = totalprofiles;
-    if(photosource.length < 1)
+    if(photosource.length < 1 && counter < 2)
     {
+        counter++;
         res.redirect('womenescorts');
     }
         res.render('mans', {
