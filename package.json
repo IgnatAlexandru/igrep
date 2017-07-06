@@ -1,0 +1,27 @@
+{
+  "name": "untitled2",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "ejs": "~2.5.6",
+    "express": "~4.15.2",
+    "jquery": "latest",
+    "morgan": "~1.8.1",
+    "nodemailer": "^4.0.1",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "serve-favicon": "~2.4.2",
+    "bunyan": "latest"
+  },
+  "devDependencies": {
+    "jsdom": "latest",
+    "glob": "latest",
+    "multer": "latest",
+    "host": "latest"
+  }
+}

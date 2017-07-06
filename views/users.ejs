@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+<head> <%= tale_name %> </head>
+<body>
+    <article>
+        <p>
+            <%= tale_description %>
+        </p>
+    </article>
+  <form method='post' enctype="multipart/form-data">
+      <input type="submit" name="button1" value="don't press me" formaction="/users/f1">
+      <input type="submit" name="button2" value="press me" formaction="/users/f2">
+  </form>
+
+</body>

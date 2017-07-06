@@ -1,0 +1,370 @@
+<html>
+<head>
+    <title> Title</title>
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+</head>
+
+<div class="parallax-container" style="height:40">
+    <div class="parallax"><img src="bg.png" ></div>
+</div>
+
+<body class="hero">
+
+
+
+    <div class="row menu1">
+
+
+
+<nav class="menu1">
+
+      <div class="col s6">
+<nav class="menu1">
+    <div class="container" >
+ <ul class="left hide-on-med-and-down">
+
+
+        <li><a class="btn btn-floating btn-large pulse"><i class="material-icons">email</i></a></li>
+        <li><a>E-MAIL: igescortslondon@gmail.com</a></li>
+        </ul>
+    </div>
+  </nav>
+        
+
+
+
+
+      </div>
+      <div class="col s6">
+<nav class="menu1">
+    <div class="container" >
+ <ul  class="right hide-on-med-and-down">
+        <li><a>CALL/SMS:</a></li>
+        <li><a>+44(0)7465737991</a></li>
+        <li>
+      <a class="btn btn-floating btn-large pulse"><i class="material-icons">phone</i></a></li>
+      </ul>
+    </div>
+  </nav>
+      </div>
+
+
+</nav>
+
+    </div>
+
+</br>
+
+</br>
+
+<%
+for(var j = 0; j < photo_source_.length ;j++)
+{
+
+%>
+
+<div class="container round">
+    </br> </br>
+
+    <div class="container ">
+        <div class="row">
+
+            <div class="col s6">
+
+                <div class="card large">
+
+                    <div class="slider">
+                        <ul class="slides">
+                            <%
+                            for(var k = 0; k < photo_source_[j].length;k++)
+                            {
+                            %>
+                            <li>
+                                <img src = <%=photo_source_[j][k]%>>
+                            </li>
+                            <%
+                            }
+                            %>
+                        </ul>
+                    </div>
+
+                    <div class="card-content">
+                        <p> <center><%=name_[j]%></center></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col s6">
+
+
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header active"><i class="material-icons"></i>Details </div>
+
+                        <div class="collapsible-body"><span>
+
+ <table  class="highlight bordered stripedresponsive-table">
+
+             <tbody>
+                 <tr>
+                     <td>Age <%=age_[j]%></td>
+                     <td></td>
+                 </tr>
+                 <tr>
+                     <td>Height <%=height_[j]%></td>
+                     <td></td>
+                 </tr>
+                 <tr>
+                     <td>Hair <%=hair_[j]%></td>
+                     <td></td>
+                 </tr>
+                 <tr>
+                     <td>Nationality <%=nationality_[j]%></td>
+                     <td></td>
+                 </tr>
+
+                 <tr>
+                     <td>Sexual orientation <%=sex_[j]%></td>
+                     <td></td>
+                 </tr>
+                 <tr>
+                     <td>Languages <%=language_[j]%></td>
+                     <td></td>
+                 </tr>
+             </tbody>
+             </table>
+</span></div>
+
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons"></i>Description</div>
+                        <div class="collapsible-body"><span><%=description_[j]%></span></div>
+                    </li>
+
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons"></i>Prices</div>
+                        <div class="collapsible-body"><span>
+
+
+ <table class="highlight bordered stripedresponsive-table responsive-table">
+
+        <tbody>
+
+          <tr>
+            <td>First hour <%=price1_[j]%></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Additional 30 mins <%=price2_[j]%></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Additional Hour(s) <%=price3_[j]%></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Overnight(8 hours) <%=price4_[j]%></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+</span></div>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<%
+}
+%>
+ 
+
+
+ <form method=post enctype="multipart/form-data" class="tab">
+  <a  class="waves-effect waves-light btn-large butt"> <input type="submit" formaction="home/recruitment" value="Back to main page"></a>
+                </form>
+
+<footer class="page-footer ">
+        
+         <div class="container">
+        <p>  Disclaimer:
+
+IG Escorts London Agency is intended for adult viewing and may contain nudity and erotic pictures of escorts. Enter the site only if you are legally entitled to access "Adult Sites" as defined by the laws of the country where you live. By entering this London escorts web site , you confirm that: You are not entering this site in any official or unofficial capacity; in order to download images, or gain information for use in any media, or to use against the owner of the site. Money exchanged for legal adult services is for time and companionship. Anything implied or inferred on this web site is not to be taken as inducement for services other than this. Any sexual activities that take place are between consenting adults. If you are under 18 or do not agree with the above disclaimer statements, please leave this site now. </p>
+   
+           
+
+            <div class="row">
+              <div class="col l6 s12">
+                <p class="white-text">
+           
+
+           <div class="row">
+              <div class="col s6"> <p>
+E-MAIL: igescortslondon@gmail.com
+</br>
+CALL/SMS:+44(0)7465737991 </p>
+      </div>
+             <div class="col s6">
+
+
+             </div>
+   
+      </div>
+
+                </p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <ul>
+
+ <form method=post enctype="multipart/form-data" class="tab">
+              
+  <li><a class="grey-text text-lighten-3"> <input type="submit" formaction="/recruitment" value="Recruitment"></a></li>
+                  <li><a class="grey-text text-lighten-3"><input type="submit" formaction="/FAQ" value="FAQS"></a></li>
+                  <li><a class="grey-text text-lighten-3"> <input type="submit" formaction="/manescorts" value="Man escorts"> </a></li>
+                 <li><a class="grey-text text-lighten-3"><input type="submit" formaction="/womenescorts" value="Women escorts"></a></li>
+                  <li><a class="grey-text text-lighten-3"><input type="submit" formaction="/lesbyescorts" value="Lesbian escorts"></a></li>
+                     </form>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-copyright">
+
+
+
+            <div class="container">
+            © 2017 Copyright Text
+              </div>
+
+          </div>
+        </footer>
+
+    <style>
+      .butt{ position: fixed; bottom: 40px; right: 30px; }
+   
+        .menu {
+            background: #300032;
+            opacity: .9;
+            background: linear-gradient(black 80%);
+            height: 80px;
+        }
+
+
+        .menu1 {
+            background: #510054;
+            opacity: .9;
+            background: linear-gradient(black 80%);
+            height: 80px;
+        }
+
+        body {
+            background:;
+        }
+
+        .button1 {
+            background: #c43235;
+        }
+
+        div ul li a {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            color: white;
+        }
+
+        h4 {
+            color: #d7b8b6;
+            text-align: center;
+
+        }
+
+        .none {
+            text-decoration: none;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .hero {
+            background: url("../site/bg.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .round {
+            border-radius: 8px;
+
+            background: rgba(41, 9, 23, .8);
+        }
+
+        .txt {
+            color: #330c1d;
+        }
+
+        input, button, submit {
+            position: bottom;
+            border: none;
+            background: none;
+        }
+
+    </style>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+
+    <script>
+        $(".button-collapse").sideNav();</script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').slider();
+        });
+    </script>
+    <script>
+        $('.tap-target').tapTarget('open');
+        $('.tap-target').tapTarget('close');</script>
+    
+    <script>
+        $(document).ready(function () {
+            $('.parallax').parallax();
+        });
+
+        $(document).ready(function () {
+            // Init Carousel
+            $('.carousel').carousel();
+
+            // Init Carousel Slider
+            $('.carousel.carousel-slider').carousel({fullWidth: true});
+
+            // Fire off toast
+            //Materialize.toast('Hello World', 3000);
+
+            // Init Slider
+            $('.slider').slider();
+
+            // Init Modal
+            $('.modal').modal();
+
+            // Init Sidenav
+            $('.button-collapse').sideNav();
+        });
+    </script>
+
+</body>
+</html>
