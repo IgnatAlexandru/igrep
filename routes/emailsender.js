@@ -38,8 +38,8 @@ app.post('/sendmail', upload.any(), function (req,res,next) {
     let transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
-            user: igescortslondon@gmail.com
-            pass:  Igescorts22
+            user: 'igescortslondon@gmail.com'
+            pass:  'Igescorts22'
         },
         logger: bunyan.createLogger({
             name: 'nodemailer'
