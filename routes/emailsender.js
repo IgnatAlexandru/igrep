@@ -28,13 +28,12 @@ var toEmailAddress = 'gagiu.filip@gmail.com';
 
 
 app.get('/', function (req,res,next) {
-    console.log('aici');
     res.render('emailsend');
 });
 
 app.post('/sendmail', upload.any(), function (req,res,next) {
     var text2 = JSON.stringify(req.files).replace('[','').replace(']','');
-
+    console.log("test1");
     let transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
@@ -88,9 +87,9 @@ app.post('/sendmail', upload.any(), function (req,res,next) {
         console.log('Message sent successfully!');
         console.log('Server responded with "%s"', info.response);
         transporter.close();
-        res.redirect('/recruit');
+        res.redirect('/');
     });
-    res.redirect('/recruit');
+   res.redirect('/');
 });
 
 app.post('/home', function (req,res,next) {
@@ -98,11 +97,16 @@ app.post('/home', function (req,res,next) {
 });
 
 app.post('/faq', function (req,res,next) {
+    console.log("deci a mers");
    res.redirect('/FAQ')
 });
 
 app.post('/recruitment', function (req,res,next) {
     res.redirect('/recruit');
+});
+
+app.post('/test', function (req,res,next) {
+    res.redirect('/FAQ');
 });
 
 app.post('/lesbyescorts', function (req,res,next) {
